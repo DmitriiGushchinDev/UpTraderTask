@@ -1,0 +1,21 @@
+{% load menu_extras %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}Up Trader Task{% endblock %}</title>
+    <style>
+      .active { font-weight: bold; }
+    </style>
+</head>
+<body>
+
+<header>
+    {% draw_menu 'main_menu' %}
+</header>
+
+<main>
+    {% block content %}{% endblock %}
+</main>
+
+</body>
+</html>
